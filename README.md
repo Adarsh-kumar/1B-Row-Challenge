@@ -18,9 +18,11 @@ To build the application, use the following command:
 
 ```sh
 go build -o process_data main.go
+```
 
 ### Running the Application 
 
+```sh
 ./process_data -file <input_file> -chunk <chunk_size> -workers <number_of_workers> -output <output_file> -blocksize <buffer_size> [-cpuprofile <file>] [-memprofile <file>]
 
 -file: Path to the input file containing the dataset.
@@ -30,3 +32,4 @@ go build -o process_data main.go
 -blocksize: Size of the buffer for reading the input file (default: 4096).
 -cpuprofile: Path to the file for writing CPU profile (optional).
 -memprofile: Path to the file for writing memory profile (optional).
+```
