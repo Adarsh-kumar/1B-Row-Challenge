@@ -1,6 +1,6 @@
 # 1 Billion Row Challenge Solution
 
-This Go application is designed to solve the 1B row challenge (https://1brc.dev/). The program reads data from a file, processes it in chunks using multiple goroutines, and calculates statistics for each city based on the temperature data provided and finally aggregates these statistics. 
+This Go application is designed to solve the 1B row challenge (https://1brc.dev/). The program reads temperature data from given file, processes it in parallel using pipelined goroutines(map-reduce style), and calculates various statistics for each city. The final output aggregates these statistics, providing insights into the minimum, maximum, and average temperatures for each city. 
 
 ## Features
 
