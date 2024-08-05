@@ -1,11 +1,11 @@
 # 1 Billion Row Challenge Solution
 
-This Go application is designed to process a large dataset efficiently, specifically targeting the 1 billion row challenge. The program reads data from a file, processes it in chunks using multiple goroutines, and calculates statistics for each city based on the temperature data provided.
+This Go application is designed to solve the 1B row challenge (https://1brc.dev/). The program reads data from a file, processes it in chunks using multiple goroutines, and calculates statistics for each city based on the temperature data provided and finally aggregates these statistics. 
 
 ## Features
 
 - **Chunked Processing:** Reads and processes data in chunks to handle large files efficiently.
-- **Concurrency:** Utilizes multiple goroutines to parallelize data processing, optimizing performance.
+- **Concurrency:** Utilizes multiple goroutines pipeliing to parallelize data processing, optimizing performance.
 - **Memory Profiling:** Supports memory profiling to analyze and optimize memory usage.
 - **CPU Profiling:** Supports CPU profiling to analyze and optimize performance.
 - **Efficient Statistics Calculation:** Computes minimum, maximum, and average temperatures for each city.
